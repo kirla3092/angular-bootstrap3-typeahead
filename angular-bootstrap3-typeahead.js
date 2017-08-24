@@ -96,7 +96,7 @@ angular.module('bootstrap3-typeahead').directive('bs3Typeahead', ["$parse", func
               attributes['source'] = JSON.parse(angular.toJson(childScope[promise]))
               initialize(attributes)
             }
-          })
+          }, true)
         } else {
           initialize(attributes) 
         }
